@@ -1,106 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-21EZTY2FWE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-21EZTY2FWE');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Momentum Sales</title>
-
+  <link rel="icon" href="logo5.png" type="image/png">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      margin: 0;
-      padding: 0;
-      color: #333;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
     }
 
     header {
-      background-color: #001f3f; /* Navy blue */
-      color: white;
-      padding: 20px 10px;
-      text-align: center;
-      font-family: 'Trebuchet MS', sans-serif;
-      font-size: 36px;
-      font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
 
-    .container {
-      display: flex;
-      max-width: 1200px;
-      margin: 20px auto;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
+    header .logo-container {
+        display: flex;
+        align-items: center;
     }
 
-    .image-container {
-      flex: 1;
-      text-align: center;
+    header .logo-container img {
+        height: 50px;
+        margin-right: 10px;
     }
 
-    .image-container img {
-      width: 100%;
-      height: auto;
-      border-right: 1px solid #ddd;
+    header .logo-container .logo-text {
+        font-size: 34px;
+        font-weight: bold;
+        color: #000;
     }
 
-    .content {
-      flex: 1;
-      padding: 20px;
+    header nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
     }
 
-    h2 {
-      font-family: 'Georgia', serif;
-      color: #001f3f; /* Navy blue */
-      margin-bottom: 10px;
+    header nav ul li {
+        margin: 0 15px;
     }
 
-    p {
-      font-size: 18px;
-      color: #555;
-      line-height: 1.6;
+    header nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
     }
 
-    .highlight {
-      font-weight: bold;
-      color: #ff5722;
+    header nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    header nav ul li:last-child a {
+        border: 2px solid #000;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
+        background-color: #fff;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    header nav ul li:last-child a:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .hero {
+        position: relative;
+        height: 100vh;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('test.png');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        padding: 50px;
+        color: white;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 700px;
+    }
+
+    .hero h1 {
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+
+    .hero ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .hero button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .hero button:hover {
+        background-color: #218838;
+        transform: scale(1.05);
     }
   </style>
 </head>
 <body>
 <header>
-  Momentum Sales
+  <div class="logo-container">
+    <img src="logo5.png" alt="Logo">
+    <div class="logo-text">MOMENTUM SALES</div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">How It Works</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 </header>
-<div class="container">
-  <div class="image-container">
-    <img src="team.jpg" alt="Momentum Sales Team">
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Empowering Your Business to Thrive</h1>
+    <p>Achieve exceptional growth with expert sales solutions tailored to your needs.</p>
+    <ul>
+      <li>Tailored B2B and door-to-door sales solutions</li>
+      <li>Proven strategies to drive measurable results</li>
+      <li>Dedicated team with extensive industry experience</li>
+      <li>Strategic partnerships for sustainable business growth</li>
+    </ul>
+    <button>CONTACT US</button>
   </div>
-  <div class="content">
-    <h2>About Us</h2>
-    <p>
-      Welcome to <span class="highlight">Momentum Sales</span>, where we bring innovation and passion to the world of sales.
-      Established with a vision to connect businesses with their customers, we specialize in delivering top-tier door-to-door
-      and B2B sales solutions. Our team of dedicated professionals thrives on helping brands expand their reach and achieve
-      their goals. Whether it's building strong client relationships or closing impactful deals, we pride ourselves on
-      excellence and results.
-    </p>
-    <h2>Our Mission</h2>
-    <p>
-      At <span class="highlight">Momentum Sales</span>, our mission is to empower businesses by providing customized
-      sales strategies that drive success. With an unwavering focus on growth, we are committed to exceeding expectations
-      and creating long-lasting partnerships.
-    </p>
-  </div>
-</div>
+</section>
+
 </body>
 </html>
+<footer style="background-color: #000; color: #fff; padding: 40px 20px; font-family: Arial, sans-serif;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; max-width: 1200px; margin: 0 auto;">
+    <!-- Logo/Brand -->
+    <div style="flex: 1.5; margin-left: -60px;"> <!-- Added negative margin to pull it closer -->
+      <h2 style="font-size: 24px; font-family: 'Arial Black', Times New Roman; margin: 0;">MOMENTUM SALES</h2>
+    </div>
+
+    <!-- Company Links -->
+    <div style="flex: 1; text-align: left;">
+      <h3 style="margin-bottom: 10px; font-size: 18px;">Company</h3>
+      <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+        <li><a href="#" style="color: #fff; text-decoration: none;">Home</a></li>
+        <li><a href="#" style="color: #fff; text-decoration: none;">About Us</a></li>
+        <li><a href="#" style="color: #fff; text-decoration: none;">Services</a></li>
+        <li><a href="#" style="color: #fff; text-decoration: none;">Contact</a></li>
+        <li><a href="#" style="color: #fff; text-decoration: none;">Careers</a></li>
+      </ul>
+    </div>
+
+    <!-- Address and Inquiries -->
+    <div style="flex: 1; text-align: left;">
+      <h3 style="margin-bottom: 10px; font-size: 18px;">Address</h3>
+      <p style="margin: 0;">Niagara Falls, ON</p>
+      <h3 style="margin-top: 20px; margin-bottom: 10px; font-size: 18px;">Inquiries</h3>
+      <p style="margin: 0;"><a href="mailto:info@momentumsales.com" style="color: #fff; text-decoration: none;">info@momentumsales.com</a></p>
+    </div>
+
+    <!-- Social Media -->
+    <div style="flex: 1; text-align: left;">
+      <h3 style="margin-bottom: 10px; font-size: 18px;">Social Media</h3>
+      <a href="https://www.linkedin.com/company/salesmomentum/about/" target="_blank" style="color: #fff; text-decoration: none;">
+        <img src="linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 5px;">
+        LinkedIn
+      </a>
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 40px; font-size: 14px;">
+    © 2025 Momentum Sales. All rights reserved.
+  </div>
+</footer>
+
