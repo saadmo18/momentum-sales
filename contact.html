@@ -3,65 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Momentum Sales</title>
+  <title>Contact Us</title>
   <link rel="icon" href="logo5.png" type="image/png">
-  <link rel="stylesheet" href="css/styles.css">
-<style>
-  .hero {
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    header .logo-container img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    header .logo-container .logo-text {
+      font-size: 34px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    header nav ul li {
+      margin: 0 15px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+
+    header nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    header nav ul li:last-child a {
+      border: 2px solid #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #000;
+      background-color: #fff;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    header nav ul li:last-child a:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .hero {
       position: relative;
-      height: 100vh;
+      height: 80vh;
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('test.png');
       background-size: cover;
       background-position: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      text-align: left;
+      align-items: center;
+      text-align: center;
       padding: 50px;
       color: white;
-  }
+    }
 
-  .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 700px;
-  }
-
-  .hero h1 {
+    .hero h1 {
       font-size: 64px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 24px;
+      font-style: italic;
+    }
+
+    .contact-info-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .contact-info-container h2 {
+      font-size: 36px;
       margin-bottom: 20px;
-  }
+    }
 
-  .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-      line-height: 1.6;
-  }
-
-  .hero ul {
-      list-style-type: disc;
-      padding-left: 20px;
+    .contact-info-container p {
       font-size: 18px;
-      margin-bottom: 30px;
-  }
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
 
-  .hero button {
-      background-color: #28a745;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      font-size: 18px;
+    .contact-info-container p strong {
       font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-  }
+    }
 
-  .hero button:hover {
-      background-color: #218838;
-      transform: scale(1.05);
-  }</style>
+    .contact-info-container a {
+      color: #007bff;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 <header>
@@ -81,22 +152,19 @@
   </nav>
 </header>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Empowering Your Business to Thrive</h1>
-    <p>Achieve exceptional growth with expert sales solutions tailored to your needs.</p>
-    <ul>
-      <li>Tailored B2B and door-to-door sales solutions</li>
-      <li>Proven strategies to drive measurable results</li>
-      <li>Dedicated team with extensive industry experience</li>
-      <li>Strategic partnerships for sustainable business growth</li>
-    </ul>
-    <button>CONTACT US</button>
-  </div>
-</section>
+<div class="hero">
+  <h1>Contact Us</h1>
+  <p>We’re here to help you every step of the way.</p>
+</div>
 
-</body>
-</html>
+<div class="contact-info-container">
+  <h2>Get in Touch</h2>
+  <p><strong>Email:</strong> <a href="mailto:info@momentumsales.site">info@momentumsales.site</a></p>
+  <p><strong>Phone:</strong> (365) 880-2013</p>
+  <p><strong>Address:</strong> Niagara Falls, ON</p>
+  <p>We’re excited to connect with you! Feel free to reach out for any inquiries, collaborations, or just to say hello. Let’s work together to achieve great things!</p>
+</div>
+
 <footer style="background-color: #000; color: #fff; padding: 40px 20px; font-family: Arial, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: flex-start; max-width: 1200px; margin: 0 auto;">
     <!-- Logo/Brand -->
@@ -114,7 +182,6 @@
         <li><a href="partnership.html" style="color: #fff; text-decoration: none;">Partnership</a></li>
         <li><a href="faq.html" style="color: #fff; text-decoration: none;">FAQ</a></li>
         <li><a href="contact.html" style="color: #fff; text-decoration: none;">Contact</a></li>
-
       </ul>
     </div>
 
@@ -123,7 +190,7 @@
       <h3 style="margin-bottom: 10px; font-size: 18px;">Address</h3>
       <p style="margin: 0;">Niagara Falls, ON</p>
       <h3 style="margin-top: 20px; margin-bottom: 10px; font-size: 18px;">Inquiries</h3>
-      <p style="margin: 0;"><a href="mailto:info@momentumsales.site" style="color: #fff; text-decoration: none;">info@momentumsales.site</a></p>
+      <p style="margin: 0;"><a href="mailto:info@momentumsales.com" style="color: #fff; text-decoration: none;">info@momentumsales.com</a></p>
     </div>
 
     <!-- Social Media -->
@@ -139,3 +206,5 @@
     © 2025 Momentum Sales. All rights reserved.
   </div>
 </footer>
+</body>
+</html>

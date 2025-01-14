@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <link rel="icon" href="logo5.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    header .logo-container img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    header .logo-container .logo-text {
+      font-size: 34px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    header nav ul li {
+      margin: 0 15px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+
+    header nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    header nav ul li:last-child a {
+      border: 2px solid #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #000;
+      background-color: #fff;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    header nav ul li:last-child a:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('test.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; /* Centering text horizontally */
+      padding: 50px;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+
+    .faq-section {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-question {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .faq-answer {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo-container">
+    <img src="logo5.png" alt="Logo">
+    <div class="logo-text">MOMENTUM SALES</div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="partnership.html">Partnership</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Frequently Asked Questions</h1>
+</div>
+
+<section class="faq-section">
+  <div class="faq-question">What services does Momentum Sales offer?</div>
+  <div class="faq-answer">Momentum Sales specializes in tailored sales solutions, including B2B sales, door-to-door campaigns, and strategic partnerships to help businesses achieve measurable growth.</div>
+
+  <div class="faq-question">How can I partner with Momentum Sales?</div>
+  <div class="faq-answer">To explore partnership opportunities, please visit our <a href="partnership.html" style="color: #007bff; text-decoration: underline;">Partnerships</a> page or reach out to us at <a href="mailto:partnerships@momentumsales.site" style="color: #007bff;">partnerships@momentumsales.site</a>.</div>
+
+  <div class="faq-question">How do I apply for a career at Momentum Sales?</div>
+  <div class="faq-answer">Visit our <a href="careers.html" style="color: #007bff; text-decoration: underline;">Careers</a> page for current job openings and instructions on how to submit your resume.</div>
+
+  <div class="faq-question">Where is Momentum Sales located?</div>
+  <div class="faq-answer">We are based in Niagara Falls, Ontario, but we serve clients across Canada and beyond.</div>
+</section>
+
+<footer style="background-color: #000; color: #fff; padding: 40px 20px; font-family: Arial, sans-serif;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; max-width: 1200px; margin: 0 auto;">
+    <!-- Logo/Brand -->
+    <div style="flex: 1; margin-left: -20px;"> <!-- Added negative margin to pull it closer -->
+      <h2 style="font-size: 24px; font-family: 'Arial Black', sans-serif; margin: 0;">MOMENTUM SALES</h2>
+    </div>
+
+    <!-- Company Links -->
+    <div style="flex: 1; text-align: left;">
+      <h3 style="margin-bottom: 10px; font-size: 18px;">Company</h3>
+      <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+        <li><a href="#" style="color: #fff; text-decoration: none;">Home</a></li>
+        <li><a href="about.html" style="color: #fff; text-decoration: none;">About Us</a></li>
+        <li><a href="careers.html" style="color: #fff; text-decoration: none;">Careers</a></li>
+        <li><a href="partnership.html" style="color: #fff; text-decoration: none;">Partnership</a></li>
+        <li><a href="faq.html" style="color: #fff; text-decoration: none;">FAQ</a></li>
+        <li><a href="contact.html" style="color: #fff; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Address and Inquiries -->
+    <div style="flex: 1; text-align: left;">
+      <h3 style="margin-bottom: 10px; font-size: 18px;">Address</h3>
+      <p style="margin: 0;">Niagara Falls, ON</p>
+      <h3 style="margin-top: 20px; margin-bottom: 10px; font-size: 18px;">Inquiries</h3>
+      <p style="margin: 0;"><a href="mailto:info@momentumsales.com" style="color: #fff; text-decoration: none;">info@momentumsales.com</a></p>
+    </div>
+
+    <!-- Social Media -->
+    <div style="flex: 1; text-align: left;">
+      <h3 style="margin-bottom: 10px; font-size: 18px;">Social Media</h3>
+      <a href="https://www.linkedin.com/company/salesmomentum/about/" target="_blank" style="color: #fff; text-decoration: none;">
+        <img src="linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 5px;">
+        LinkedIn
+      </a>
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 40px; font-size: 14px;">
+    © 2025 Momentum Sales. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
